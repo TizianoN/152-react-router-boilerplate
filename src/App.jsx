@@ -1,15 +1,12 @@
-import Header from "./components/Header";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
+import HomePage from "./pages/HomePage";
 
 export default function App() {
   return (
-    <>
-      <Header />
-
-      <main>
-        <div className="py-5 container">
-          <h1>React router boilerplate</h1>
-        </div>
-      </main>
-    </>
+    <BrowserRouter>
+      <Routes>
+        <Route index Component={HomePage} />
+      </Routes>
+    </BrowserRouter>
   );
 }
