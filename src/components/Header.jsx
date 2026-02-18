@@ -4,9 +4,9 @@ export default function Header() {
   return (
     <nav className="bg-body-tertiary navbar navbar-expand-lg">
       <div className="container-fluid">
-        <a className="navbar-brand" href="#">
+        <NavLink className="nav-link" to="/">
           Navbar
-        </a>
+        </NavLink>
         <button
           className="navbar-toggler"
           type="button"
